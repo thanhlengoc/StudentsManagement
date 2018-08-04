@@ -1,28 +1,83 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!doctype html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>:: Home ::</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple Theme</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-	<table width="100%">
-		<tr bgcolor=F9F9F3>
-			<td align="left"><h1>Login Success.....</h1></td>
-			<td align="right">
-				<h2>
-					Hi,
-					<%=request.getAttribute("username")%>
-				</h2>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2"><h1 align="center">
-					</br>
-					</br>comming soon...., website under construction
-				</h1></td>
-		</tr>
-	</table>
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <h1 class="title">THANH LE NGOC</h1>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <ul>
+        <li>ABOUT</li>
+        <li>WORK</li>
+        <li>PORTFOLIO</li>
+        <li>SERVICES</li>
+        <li>CLIENTS</li>
+        <li>CONTACT</li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2 class="noDisplay">Main Content</h2>
+    <article class="left_article">
+      <h3>content heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </article>
+    <aside class="right_article"><img src="images/placeholder.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
+  </section>
+  <div class="row">
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+    <div class="columns">
+      <p class="thumbnail_align"> <img src="images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
+      <h4>TITLE</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    </div>
+  </div>
+  <div class="row blockDisplay">
+    <div class="column_half left_half">
+      <h2 class="column_title">LEFT COLUMN</h2>
+    </div>
+    <div class="column_half right_half">
+      <h2 class="column_title">RIGHT COLUMN</h2>
+    </div>
+  </div>
+  <div class="social">
+    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
+    <p class="social_icon"><img src="images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
+  </div>
+  <footer class="secondary_header footer">
+    <div class="copyright">&copy;2015 - <strong>SIMPLE Theme</strong></div>
+  </footer>
+</div>
 </body>
 </html>
